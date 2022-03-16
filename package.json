@@ -1,21 +1,35 @@
 {
-    "name": "jeap-glow",
-    "displayName": "JeAP Glow",
-    "description": "Custom theme inspired by Afterglow",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.65.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "JeAP Glow",
-                "uiTheme": "vs-dark",
-                "path": "./themes/JeAP Glow-color-theme.json"
-            }
-        ]
-    }
+  "name": "jeap-glow",
+  "displayName": "JeAP Glow",
+  "description": "My VS Code custom theme inspired by Afterglow",
+  "version": "1.0.0",
+  "publisher": "jeapdev",
+  "icon": "profile-square-150px.jpeg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JorgEdmundo/jeap-glow"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "jeap glow",
+    "jeap-glow",
+    "jeapdev",
+    "jeap glow dark"
+  ],
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "JeAP Glow",
+        "uiTheme": "vs-dark",
+        "path": "./themes/JeAP Glow-color-theme.json"
+      }
+    ]
+  }
 }
