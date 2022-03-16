@@ -1,0 +1,21 @@
+{
+    "name": "jeap-glow",
+    "displayName": "JeAP Glow",
+    "description": "Custom theme inspired by Afterglow",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "JeAP Glow",
+                "uiTheme": "vs-dark",
+                "path": "./themes/JeAP Glow-color-theme.json"
+            }
+        ]
+    }
+}
