@@ -33,24 +33,15 @@
       }
     },
     {
-      "name": "Built-in constant",
-      "scope": "constant.language",
-      "settings": {
-        "foreground": "#9E86C8"
-      }
-    },
-    {
       "name": "User-defined constant",
-      "scope": ["constant.character", "constant.other", "constant.language"],
+      "scope": [
+        "constant.character",
+        "constant.other",
+        "constant.language"
+      ],
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#9E86C8"
-      }
-    },
-    {
-      "name": "Variable",
-      "scope": ["variable"],
-      "settings": {
-        "foreground": "#e7eaf6"
       }
     },
     {
@@ -70,7 +61,12 @@
     },
     {
       "name": "Storage type",
-      "scope": "storage.type",
+      "scope": [
+        "storage.type",
+        "storage.type.class.js",
+        "storage.modifier.js",
+        "variable.language.super.js"
+      ],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#6C99BB"
@@ -79,15 +75,12 @@
     {
       "name": "Storage Type Class",
       "scope": [
-        "storage.type.class.js",
-        "storage.modifier.js",
-        "variable.language.super.js",
         "variable.language.this.js",
         "storage.type.class.php",
         "variable.language.this.php"
       ],
       "settings": {
-        "fontStyle": "",
+        "fontStyle": "italic",
         "foreground": "#C5A5C2"
       }
     },
@@ -99,7 +92,12 @@
         "punctuation.section.embedded.end.js",
         "punctuation.accessor.js",
         "punctuation.definition.template-expression.begin.js",
-        "punctuation.definition.template-expression.end.js"
+        "punctuation.definition.template-expression.end.js",
+        "punctuation.separator.key-value.js.jsx",
+        "punctuation.separator.key-value.js",
+        "punctuation.definition.section.case-statement.js",
+        "punctuation.separator.parameter.js",
+        "punctuation.separator.comma.js"
       ],
       "settings": {
         "fontStyle": "",
@@ -119,14 +117,6 @@
       "scope": "entity.name.class",
       "settings": {
         "foreground": "#F0688A"
-      }
-    },
-    {
-      "name": "Inherited class",
-      "scope": "entity.other.inherited-class",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#FAC863"
       }
     },
     {
@@ -184,7 +174,11 @@
     },
     {
       "name": "Library class/type",
-      "scope": ["support.type", "support.class"],
+      "scope": [
+        "support.type",
+        "support.class",
+        "entity.name.tag.css"
+      ],
       "settings": {
         "foreground": "#6C99BB",
         "fontStyle": " italic"
@@ -253,6 +247,16 @@
       ],
       "settings": {
         "foreground": "#a7bae9"
+      }
+    },
+    {
+      "name": "Variable Constant",
+      "scope": [
+        "variable.other.constant.object.js.jsx",
+        "variable.other.constant.object.js"
+      ],
+      "settings": {
+        "foreground": "#E87D3E"
       }
     },
     {
@@ -375,6 +379,13 @@
       }
     },
     {
+      "name": "CSS Pseudo class",
+      "scope": ["entity.other.attribute-name.pseudo-class.css"],
+      "settings": {
+        "foreground": "#E6EEE7"
+      }
+    },
+    {
       "name": "Inserted",
       "scope": ["markup.inserted"],
       "settings": {
@@ -438,6 +449,66 @@
       }
     },
     {
+      "name": "JS object variables",
+      "scope": [
+        "meta.object-literal.key.js.jsx",
+        "meta.object-literal.key.js",
+      ],
+      "settings": {
+        "foreground": "#C5A5C2"
+      }
+    },
+    {
+      "name": "String Quotes",
+      "scope": [
+        "punctuation.definition.string.template.end.js.jsx",
+        "punctuation.definition.string.template.end.js",
+        "punctuation.definition.string.template.begin.js.jsx",
+        "punctuation.definition.string.template.begin.js",
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.end.js"
+      ],
+      "settings": {
+        "foreground": "#C5A5C2"
+      }
+    },
+    {
+      "name": "JS variables",
+      "scope": [
+        "variable",
+        "variable.other.constant.js.jsx",
+        "variable.other.constant.js",
+        "variable.other.readwrite.alias.js.jsx",
+        "variable.other.readwrite.alias.js"
+      ],
+      "settings": {
+        "foreground": "#E6EEE7"
+      }
+    },
+    {
+      "name": "JS properties",
+      "scope": [
+        "variable.object.property.js.jsx",
+        "variable.object.property.js",
+        "variable.other.property.js.jsx",
+        "variable.other.property.js"
+      ],
+      "settings": {
+        "foreground": "#E76270"
+      }
+    },
+    {
+      "name": "JS Class",
+      "scope": [
+        "entity.name.type.class.js.jsx",
+        "entity.name.type.class.js",
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "foreground": "#E6F355"
+      }
+    },
+    {
       "name": "JSON Key - Level 0",
       "scope": [
         "source.json meta.structure.dictionary.json support.type.property-name.json"
@@ -470,7 +541,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#A7D5CF"
+        "foreground": "#E6EEE7"
       }
     },
     {

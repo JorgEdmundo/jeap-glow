@@ -8,7 +8,16 @@ The theme is inspired on light colors with a dark setting.
 
 ## Color palette 🎨
 
-`#B4C973` `#6C99BB` `#B05279` `#E5B567` `#E87D3E` `#C5A5C2` `#FC929E` `#A7D5CF`
+- Function Green: `#B4C973`
+- Const Blue: `#6C99BB`
+- Keyword Purple: `#B05279`
+- Yellow String: `#E5B567`
+- Orange Param: `#E87D3E`
+- This Lilac: `#C5A5C2`
+- Tag Salmon: `#FC929E`
+- Object Candy: `#E76270`
+- Class Green: `#E6F355`
+- Variable Mint: `#E6EEE7`
 
 ## Tutorial
 
