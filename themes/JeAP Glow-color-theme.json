@@ -13,7 +13,7 @@
   "tokenColors": [
     {
       "name": "Comment",
-      "scope": "comment",
+      "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "foreground": "#a4a2a2"
       }
@@ -22,6 +22,7 @@
       "name": "String",
       "scope": "string",
       "settings": {
+        "fontStyle": "",
         "foreground": "#E5B567"
       }
     },
@@ -29,6 +30,7 @@
       "name": "Number",
       "scope": "constant.numeric",
       "settings": {
+        "fontStyle": "",
         "foreground": "#9E86C8"
       }
     },
@@ -46,8 +48,9 @@
     },
     {
       "name": "Keyword",
-      "scope": "keyword",
+      "scope": ["keyword", "punctuation.definition.keyword"],
       "settings": {
+        "fontStyle": "",
         "foreground": "#B05279"
       }
     },
@@ -93,7 +96,6 @@
         "punctuation.accessor.js",
         "punctuation.definition.template-expression.begin.js",
         "punctuation.definition.template-expression.end.js",
-        "punctuation.separator.key-value.js.jsx",
         "punctuation.separator.key-value.js",
         "punctuation.definition.section.case-statement.js",
         "punctuation.separator.parameter.js",
@@ -173,18 +175,6 @@
       }
     },
     {
-      "name": "Library class/type",
-      "scope": [
-        "support.type",
-        "support.class",
-        "entity.name.tag.css"
-      ],
-      "settings": {
-        "foreground": "#6C99BB",
-        "fontStyle": " italic"
-      }
-    },
-    {
       "name": "Library variable",
       "scope": "support.other.variable",
       "settings": {
@@ -226,9 +216,11 @@
       "scope": [
         "meta.brace.round",
         "punctuation.definition.parameters.begin",
-        "punctuation.definition.parameters.end"
+        "punctuation.definition.parameters.end",
+        "source.css punctuation.section.function",
       ],
       "settings": {
+        "fontStyle": "",
         "foreground": "#F0E76C"
       }
     },
@@ -252,7 +244,6 @@
     {
       "name": "Variable Constant",
       "scope": [
-        "variable.other.constant.object.js.jsx",
         "variable.other.constant.object.js"
       ],
       "settings": {
@@ -350,7 +341,8 @@
       "name": "HTML Attributes",
       "scope": [
         "text.html.basic entity.other.attribute-name.html",
-        "text.html.basic entity.other.attribute-name"
+        "text.html.basic entity.other.attribute-name",
+        "constant.character.escape.scss"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -358,31 +350,150 @@
       }
     },
     {
-      "name": "CSS Classes property value",
-      "scope": ["support.constant.property-value.css"],
+      "name": "CCS Library class/type",
+      "scope": [
+        "meta.property-name.scss",
+        "support.type.property-name",
+        "support.class",
+        "source.css meta.property-list"
+      ],
       "settings": {
-        "foreground": "#C5A5C2"
-      }
-    },
-    {
-      "name": "CSS Classes",
-      "scope": ["entity.other.attribute-name.class"],
-      "settings": {
-        "foreground": "#B4C973"
-      }
-    },
-    {
-      "name": "CSS ID's",
-      "scope": ["source.sass keyword.control"],
-      "settings": {
+        "fontStyle": "italic",
         "foreground": "#6C99BB"
       }
     },
     {
+      "name": "CSS Property tag keys",
+      "scope": [
+        "source.css entity.name.tag.css",
+        "source.css entity.other.attribute-name",
+        "source.css entity.other.keyframe-offset"
+      ],
+      "settings": {
+        "foreground": "#E76270"
+      }
+    },
+    {
+      "name": "CSS Classes property value",
+      "scope": [
+        "source.css.scss support.constant.property-value.css",
+        "source.css support.constant.color.w3c-standard-color-name.css",
+        "source.css support.constant.font-name.css",
+        "source.css.scss meta.property-value.scss",
+        "source.css meta.property-value.css",
+        "source.css support.constant.property-value"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#E6EEE7"
+      }
+    },
+    {
+      "name": "CSS punctuation section",
+      "scope": [
+        "source.css.scss punctuation.section",
+        "source.css.scss punctuation.separator",
+        "source.css punctuation.separator",
+        "source.css.scss punctuation.terminator",
+        "source.css punctuation.terminator",
+        "source.css punctuation.section"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#88C6BE"
+      }
+    },
+    {
+      "name": "CSS punctuation definition",
+      "scope": [
+        "source.css punctuation.definition"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#E6EEE7"
+      }
+    },
+    {
+      "name": "CSS Classes",
+      "scope": [
+        "source.css.scss entity.other.attribute-name.class",
+        "source.css entity.other.attribute-name.class",
+        "source.css.scss entity.other.attribute-name.parent-selector-suffix.css",
+        "source.css.scss meta.property-list.scss variable.scss",
+        "source.css variable",
+        "source.css entity.other.attribute-name.class punctuation.definition.entity",
+        "source.css meta.at-rule.keyframes entity.other.attribute-name",
+        "source.css meta.at-rule.extend entity.other.attribute-name",
+        "source.css entity.other.attribute-name.placeholder punctuation.definition.entity",
+        "source.css entity.other.attribute-name.placeholder"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#B4C973"
+      }
+    },
+    {
+      "name": "CSS Functions",
+      "scope": [
+        "source.css support.function",
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FC929E"
+      }
+    },
+    {
+      "name": "CSS IDs",
+      "scope": [
+        "source.css entity.other.attribute-name.id",
+        "source.css entity.other.attribute-name.id punctuation.definition.entity"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#E6F355"
+      }
+    },
+    {
       "name": "CSS Pseudo class",
-      "scope": ["entity.other.attribute-name.pseudo-class.css"],
+      "scope": [
+        "source.css entity.other.attribute-name.pseudo-class.css",
+        "source.css entity.other.attribute-name.pseudo-element.css"
+      ],
       "settings": {
         "foreground": "#E6EEE7"
+      }
+    },
+    {
+      "name": "SCSS Variables",
+      "scope": [
+        "source.css.scss meta.property-list.scss meta.property-value.scss variable.scss"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#E87D3E"
+      }
+    },
+    {
+      "name": "CSS Special keywords",
+      "scope": [
+        "keyword.other.important.css",
+        "keyword.other.important.scss"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#FC929E"
+      }
+    },
+    {
+      "name": "CSS Strings",
+      "scope": [
+        "source.css.scss string",
+        "source.css string",
+        "source.css.scss punctuation.definition.string",
+        "source.css.scss meta.attribute-selector.scss"
+      ],
+      "settings": {
+        "foreground": "#E5B567"
       }
     },
     {
@@ -451,7 +562,6 @@
     {
       "name": "JS object variables",
       "scope": [
-        "meta.object-literal.key.js.jsx",
         "meta.object-literal.key.js",
       ],
       "settings": {
@@ -461,9 +571,7 @@
     {
       "name": "String Quotes",
       "scope": [
-        "punctuation.definition.string.template.end.js.jsx",
         "punctuation.definition.string.template.end.js",
-        "punctuation.definition.string.template.begin.js.jsx",
         "punctuation.definition.string.template.begin.js",
         "punctuation.definition.string.begin.js",
         "punctuation.definition.string.end.js"
@@ -476,21 +584,18 @@
       "name": "JS variables",
       "scope": [
         "variable",
-        "variable.other.constant.js.jsx",
         "variable.other.constant.js",
-        "variable.other.readwrite.alias.js.jsx",
         "variable.other.readwrite.alias.js"
       ],
       "settings": {
+        "fontStyle": "",
         "foreground": "#E6EEE7"
       }
     },
     {
       "name": "JS properties",
       "scope": [
-        "variable.object.property.js.jsx",
         "variable.object.property.js",
-        "variable.other.property.js.jsx",
         "variable.other.property.js"
       ],
       "settings": {
@@ -500,7 +605,6 @@
     {
       "name": "JS Class",
       "scope": [
-        "entity.name.type.class.js.jsx",
         "entity.name.type.class.js",
         "entity.other.inherited-class"
       ],
@@ -666,7 +770,7 @@
       }
     },
     {
-      "name": "Markdown - Blockquote",
+      "name": "Markdown - Block quote",
       "scope": ["markup.quote punctuation.definition.blockquote.markdown"],
       "settings": {
         "foreground": "#65737E"
