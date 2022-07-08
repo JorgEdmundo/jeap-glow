@@ -416,16 +416,16 @@
     {
       "name": "CSS Classes",
       "scope": [
-        "source.css.scss entity.other.attribute-name.class",
-        "source.css entity.other.attribute-name.class",
-        "source.css.scss entity.other.attribute-name.parent-selector-suffix.css",
-        "source.css.scss meta.property-list.scss variable.scss",
         "source.css variable",
-        "source.css entity.other.attribute-name.class punctuation.definition.entity",
-        "source.css meta.at-rule.keyframes entity.other.attribute-name",
+        "source.css entity.other.attribute-name.class",
+        "source.css entity.other.attribute-name.placeholder",
+        "source.css.scss meta.property-list.scss variable.scss",
         "source.css meta.at-rule.extend entity.other.attribute-name",
-        "source.css entity.other.attribute-name.placeholder punctuation.definition.entity",
-        "source.css entity.other.attribute-name.placeholder"
+        "source.css meta.at-rule.keyframes entity.other.attribute-name",
+        "source.css.scss entity.other.attribute-name.parent-selector-suffix.css",
+        "source.css entity.other.attribute-name.class punctuation.definition.entity",
+        "source.css entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
+        "source.css entity.other.attribute-name.placeholder punctuation.definition.entity"
       ],
       "settings": {
         "fontStyle": "",
